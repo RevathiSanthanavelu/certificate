@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify Certificate | CTDSTN Certificate Verification</title>
+  <meta name="description" content="Instantly verify the authenticity of CTDSTN professional certificates." />
+  <link rel="stylesheet" href="css/main.css?v=2" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <div class="mark">CT</div>
+        <div>CTDSTN</div>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="admin/index.html">Admin Login</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Certificate Verification</h1>
+      <p>Instantly verify the authenticity of CTDSTN professional certificates using the certificate number.</p>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="verify-card">
+        <h2>Verify a Certificate</h2>
+        <form id="verify-form" novalidate>
+          <div class="form-group">
+            <label for="cert-number">Certificate Number</label>
+            <input
+              type="text"
+              id="cert-number"
+              name="certificateNumber"
+              class="form-control"
+              placeholder="e.g. CTDSTN-2024-1001"
+              autocomplete="off"
+              maxlength="50"
+            />
+            <span class="text-danger" id="input-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary" id="verify-btn">Verify Certificate</button>
+        </form>
+        <div id="verify-result" class="result"></div>
+      </div>
+    </div>
+  </main>
+
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Verify With CTDSTN?</h2>
+        <p>Secure, instant, and reliable certificate validation for employers and institutions.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">&#x23F3;</div>
+          <h3>Instant Verification</h3>
+          <p>Get verification results in real time by entering the certificate number.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#x1F512;</div>
+          <h3>Verified Records</h3>
+          <p>Each certificate is uniquely numbered and issued by CTDSTN Institute.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#x1F4F1;</div>
+          <h3>Mobile Friendly</h3>
+          <p>Verify certificates from any device, anywhere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="logo">
+        <div class="mark">CT</div>
+        <div style="font-size: 1.125rem">CTDSTN</div>
+      </div>
+      <p>CTDSTN Certificate Verification System &#8212; Demo</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CTDSTN Institute. Frontend demo using localStorage. Not for production use.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/storage.js?v=2"></script>
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>
